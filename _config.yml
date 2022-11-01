@@ -3,12 +3,18 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
+# 标题
 title: Flower Unbeaten's Blog
+# 副标题
 subtitle: ''
+#描述
 description: ''
 keywords:
+# 作者
 author: Ryan Wang
+# 语言
 language: zh-CN
+# 时区
 timezone: Asia/Shanghai
 
 # URL
@@ -28,10 +34,13 @@ archive_dir: archives
 category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang
-skip_render:
+# 部署的时候不包含的文件
+skip_render: README.md
 
 # Writing
-new_post_name: :title.md # File name of new posts
+# 默认的新博文名称
+new_post_name: :title.md
+# 默认布局
 default_layout: post
 titlecase: false # Transform title into titlecase
 external_link:
@@ -39,14 +48,20 @@ external_link:
   field: site # Apply to the whole site
   exclude: ''
 filename_case: 0
+# 是否显示草稿
 render_drafts: false
+# 是否启用资源文件夹（用来存放相对路径图片或文件）
 post_asset_folder: false
+# 把链接改为与根目录的相对位址
 relative_link: false
 future: true
 highlight:
+  # 是否开启代码高亮
   enable: true
+  # 是否增加代码行号
   line_number: true
-  auto_detect: false
+  # 自动判断代码语言
+  auto_detect: true
   tab_replace: ''
   wrap: true
   hljs: false
@@ -60,9 +75,13 @@ prismjs:
 # path: Root path for your blogs index page. (default = '')
 # per_page: Posts displayed per page. (0 = disable pagination)
 # order_by: Posts order. (Order by date descending by default)
+# 首页博客分布
 index_generator:
+  # 博客的默认路径
   path: ''
+  # 每页博客数量上限
   per_page: 10
+  # 博客排序
   order_by: -date
 
 # Category & Tag
@@ -78,7 +97,9 @@ meta_generator: true
 ## Hexo uses Moment.js to parse and display date
 ## You can customize the date format as defined in
 ## http://momentjs.com/docs/#/displaying/format/
+# 博客日期格式
 date_format: YYYY-MM-DD
+# 博客时间格式
 time_format: HH:mm:ss
 ## updated_option supports 'mtime', 'date', 'empty'
 updated_option: 'mtime'
@@ -87,6 +108,16 @@ updated_option: 'mtime'
 ## Set per_page to 0 to disable pagination
 per_page: 10
 pagination_dir: page
+
+
+# 归档页的分页设置
+archive_generator:
+  # 归档页每页博客数
+  per_page: 30
+  # 按年归档
+  yearly: true 
+  # 按月归档
+  monthly: true 
 
 # Include / Exclude file(s)
 ## include:/exclude: options only apply to the 'source/' folder
@@ -98,10 +129,12 @@ ignore:
 ## Plugins: https://hexo.io/plugins/
 
 ## Themes: https://hexo.io/themes/
+# 主题
 theme: next
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
+# 博客部署
 deploy:
   type: git
   repo: https://github.com/flowerunbeaten/flowerunbeaten.github.io.git
