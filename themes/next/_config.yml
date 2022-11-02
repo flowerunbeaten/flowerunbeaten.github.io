@@ -33,7 +33,7 @@ custom_file_path:
 #bodyEnd: source/_data/body-end.swig
 #variable: source/_data/variables.styl
 #mixin: source/_data/mixins.styl
-#style: source/_data/styles.styl
+style: source/_data/styles.styl
 
 
 # ---------------------------------------------------------------
@@ -54,14 +54,16 @@ language_switcher: false
 
 footer:
   # Specify the date when the site was setup. If not defined, current year will be used.
-  #since: 2015
+  # 建站时间
+  since: 2022
 
   # Icon between year and copyright info.
   icon:
     # Icon name in Font Awesome. See: https://fontawesome.com/icons
     name: fa fa-heart
     # If you want to animate the icon, set it to true.
-    animated: false
+    # 图标是否闪动
+    animated: true
     # Change the color of icon, using Hex Code.
     color: "#ff0000"
 
@@ -69,7 +71,7 @@ footer:
   copyright:
 
   # Powered by Hexo & NexT
-  powered: true
+  powered: false
 
   # Beian ICP and gongan information for Chinese users. See: https://beian.miit.gov.cn, http://www.beian.gov.cn
   beian:
@@ -89,8 +91,8 @@ footer:
 # CC licenses are available in 39 languages, you can find the specific and correct abbreviation you need on https://creativecommons.org
 creative_commons:
   license: by-nc-sa
-  sidebar: false
-  post: false
+  sidebar: true
+  post: true
   language:
 
 
@@ -168,11 +170,13 @@ sidebar:
 # Sidebar Avatar
 avatar:
   # Replace the default image and set the url here.
-  url: #/images/avatar.gif
+  url: /images/avatar.png
   # If true, the avatar will be dispalyed in circle.
+  # 头像是否设为圆形，否则为矩形
   rounded: false
   # If true, the avatar will be rotated with the cursor.
-  rotated: false
+  # 鼠标放在头像上时是否旋转
+  rotated: true
 
 # Posts / Categories / Tags in sidebar.
 site_state: true
@@ -182,8 +186,8 @@ site_state: true
 # Key is the link label showing to end users.
 # Value before `||` delimiter is the target permalink, value after `||` delimiter is the name of Font Awesome icon.
 social:
-#GitHub: https://github.com/yourname || fab fa-github
-#E-Mail: mailto:yourname@gmail.com || fa fa-envelope
+GitHub: https://github.com/flowerunbeaten || fab fa-github
+E-Mail: mailto:ryanwang1491@gmail.com || fa fa-envelope
 #Weibo: https://weibo.com/yourname || fab fa-weibo
 #Google: https://plus.google.com/yourname || fab fa-google
 #Twitter: https://twitter.com/yourname || fab fa-twitter
@@ -194,9 +198,11 @@ social:
 #Skype: skype:yourname?call|chat || fab fa-skype
 
 social_icons:
+  # 是否显示社交图标
   enable: true
+  # 是否仅显示社交图标
   icons_only: false
-  transition: false
+  transition: true
 
 # Blog rolls
 links_settings:
@@ -283,12 +289,14 @@ follow_me:
 #Telegram: https://t.me/channel_name || fab fa-telegram
 #WeChat: /images/wechat_channel.jpg || fab fa-weixin
 #RSS: /atom.xml || fa fa-rss
+rss: /atom.xml
 
 # Related popular posts
 # Dependencies: https://github.com/tea3/hexo-related-popular-posts
 related_posts:
-  enable: false
-  title: # Custom header, leave empty to use the default one
+  enable: true
+  # Custom header, leave empty to use the default one
+  title: 相关文章推荐
   display_in_home: false
   params:
     maxCount: 5
@@ -362,9 +370,9 @@ codeblock:
   highlight_theme: normal
   # Add copy button on codeblock
   copy_button:
-    enable: false
+    enable: true
     # Show text copy result.
-    show_result: false
+    show_result: true
     # Available values: default | flat | mac
     style:
 
@@ -373,7 +381,7 @@ back2top:
   # Back to top in sidebar.
   sidebar: false
   # Scroll percent label in b2t button.
-  scrollpercent: false
+  scrollpercent: true
 
 # Reading progress bar
 reading_progress:
@@ -716,7 +724,7 @@ firestore:
 # Show Views / Visitors of the website / page with busuanzi.
 # Get more information on http://ibruce.info/2015/04/04/busuanzi
 busuanzi_count:
-  enable: false
+  enable: true
   total_visitors: true
   total_visitors_icon: fa fa-user
   total_views: true
@@ -744,7 +752,7 @@ algolia_search:
 # Local Search
 # Dependencies: https://github.com/theme-next/hexo-generator-searchdb
 local_search:
-  enable: false
+  enable: true
   # If auto, trigger search by changing input.
   # If manual, trigger search by pressing enter key or search button.
   trigger: auto
