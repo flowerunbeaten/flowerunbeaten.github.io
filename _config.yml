@@ -115,9 +115,9 @@ archive_generator:
   # 归档页每页博客数
   per_page: 30
   # 按年归档
-  yearly: true 
+  yearly: true
   # 按月归档
-  monthly: true 
+  monthly: true
 
 # Include / Exclude file(s)
 ## include:/exclude: options only apply to the 'source/' folder
@@ -139,4 +139,3 @@ deploy:
   type: git
   repo: https://github.com/flowerunbeaten/flowerunbeaten.github.io.git
   branch: master
-
