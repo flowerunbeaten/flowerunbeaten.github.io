@@ -31,9 +31,9 @@ custom_file_path:
 #postBodyEnd: source/_data/post-body-end.swig
 #footer: source/_data/footer.swig
 #bodyEnd: source/_data/body-end.swig
-#variable: source/_data/variables.styl
+  variable: source/_data/variables.styl
 #mixin: source/_data/mixins.styl
-style: source/_data/styles.styl
+  style: source/_data/styles.styl
 
 
 # ---------------------------------------------------------------
@@ -42,10 +42,10 @@ style: source/_data/styles.styl
 # ---------------------------------------------------------------
 
 favicon:
-  small: /images/favicon-16x16-next.png
-  medium: /images/favicon-32x32-next.png
-  apple_touch_icon: /images/apple-touch-icon-next.png
-  safari_pinned_tab: /images/logo.svg
+  small: /images/F_16.png
+  medium: /images/F_32.png
+  apple_touch_icon: /images/F_128.png
+  safari_pinned_tab: /images/F.svg
   #android_manifest: /images/manifest.json
   #ms_browserconfig: /images/browserconfig.xml
 
@@ -68,7 +68,7 @@ footer:
     color: "#ff0000"
 
   # If not defined, `author` from Hexo `_config.yml` will be used.
-  copyright:
+  copyright: Flower Unbeaten
 
   # Powered by Hexo & NexT
   powered: false
@@ -186,8 +186,8 @@ site_state: true
 # Key is the link label showing to end users.
 # Value before `||` delimiter is the target permalink, value after `||` delimiter is the name of Font Awesome icon.
 social:
-GitHub: https://github.com/flowerunbeaten || fab fa-github
-E-Mail: mailto:ryanwang1491@gmail.com || fa fa-envelope
+  GitHub: https://github.com/flowerunbeaten || fab fa-github
+  E-Mail: mailto:ryanwang1491@gmail.com || fa fa-envelope
 #Weibo: https://weibo.com/yourname || fab fa-weibo
 #Google: https://plus.google.com/yourname || fab fa-google
 #Twitter: https://twitter.com/yourname || fab fa-twitter

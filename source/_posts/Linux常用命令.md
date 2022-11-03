@@ -3,6 +3,9 @@ title: Linux常用命令
 abbrlink: bc66
 date: 2022-11-02 10:16:44
 tags:
+- Linux
+categories:
+- Linux
 ---
 
 Linux常用命令
