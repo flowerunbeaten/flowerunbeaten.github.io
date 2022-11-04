@@ -188,6 +188,7 @@ site_state: true
 social:
   GitHub: https://github.com/flowerunbeaten || fab fa-github
   E-Mail: mailto:ryanwang1491@gmail.com || fa fa-envelope
+  RSS: https://flowerunbeaten.github.io/atom.xml || fa fa-rss fa-fw
 #Weibo: https://weibo.com/yourname || fab fa-weibo
 #Google: https://plus.google.com/yourname || fab fa-google
 #Twitter: https://twitter.com/yourname || fab fa-twitter
@@ -201,7 +202,7 @@ social_icons:
   # 是否显示社交图标
   enable: true
   # 是否仅显示社交图标
-  icons_only: false
+  icons_only: true
   transition: true
 
 # Blog rolls
@@ -421,7 +422,7 @@ github_banner:
 # ---------------------------------------------------------------
 
 font:
-  enable: false
+  enable: true
 
   # Uri of fonts host, e.g. https://fonts.googleapis.com (Default).
   host:
@@ -434,7 +435,7 @@ font:
   # Global font settings used for all elements inside <body>.
   global:
     external: true
-    family: Lato
+    family: Noto Serif SC
     size:
 
   # Font settings for site title (.site-title).
@@ -724,7 +725,7 @@ firestore:
 # Show Views / Visitors of the website / page with busuanzi.
 # Get more information on http://ibruce.info/2015/04/04/busuanzi
 busuanzi_count:
-  enable: true
+  enable: false
   total_visitors: true
   total_visitors_icon: fa fa-user
   total_views: true

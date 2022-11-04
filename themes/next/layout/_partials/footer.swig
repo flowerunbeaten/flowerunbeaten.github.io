@@ -61,6 +61,15 @@ setInterval("createtime()",250);
   {%- endif %}
 </div>
 
+<div class="busuanzi-count">
+    <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <span class="post-meta-item-icon"> <i class="fa fa-user"></i> Visitors</span>
+    <span class="site-uv" title="总访客量"><span id="busuanzi_value_site_uv"></span></span>
+    <span class="post-meta-divider"> | </span>
+    <span class="post-meta-item-icon"> <i class="fa fa-eye"></i> Views</span>
+    <span class="site-pv" title="总访问量"><span id="busuanzi_value_site_pv"></span></span>
+</div>
+
 {%- if theme.footer.powered %}
   <div class="powered-by">
     {%- set next_site = 'https://theme-next.org' %}
@@ -78,3 +87,4 @@ setInterval("createtime()",250);
 {%- endif %}
 
 {{- next_inject('footer') }}
+
