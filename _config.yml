@@ -148,7 +148,7 @@ deploy:
 
 # 搜索
 search:
-  path: search.json
+  path: search.xml
   field: post
   format: html
   limit: 1000

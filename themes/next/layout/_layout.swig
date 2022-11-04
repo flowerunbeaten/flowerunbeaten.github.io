@@ -56,5 +56,9 @@
   {%- if theme.pjax %}
     </div>
   {%- endif %}
+  <!-- 引入jQuery -->
+  <script type="text/javascript" src="//libs.baidu.com/jquery/1.8.3/jquery.min.js"></script>
+  <!-- 雪花特效 -->
+  <script type="text/javascript" src="\js\snow.js"></script>
 </body>
 </html>
