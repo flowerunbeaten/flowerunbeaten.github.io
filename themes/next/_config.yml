@@ -625,15 +625,21 @@ changyan:
 # For more information: https://valine.js.org, https://github.com/xCss/Valine
 valine:
   enable: false
-  appid: # Your leancloud application appid
-  appkey: # Your leancloud application appkey
-  notify: false # Mail notifier
-  verify: false # Verification code
-  placeholder: Just go go # Comment box placeholder
+  # Your leancloud application appid
+  appid: sNjXsM6NGEJigsY3v9woNssc-gzGzoHsz
+  # Your leancloud application appkey
+  appkey: 7XfjlqbaP7feBU2Y2QKyqJBT
+  # Mail notifier
+  notify: false
+  # Verification code
+  verify: false
+  # Comment box placeholder
+  placeholder: Just go go
   avatar: mm # Gravatar style
   guest_info: nick,mail,link # Custom comment header
   pageSize: 10 # Pagination size
-  language: # Language, available values: en, zh-cn
+  # Language, available values: en, zh-cn
+  language: zh-cn
   visitor: false # Article reading statistic
   comment_count: true # If false, comment count will only be displayed in post page, not in home page
   recordIP: false # Whether to record the commenter IP
@@ -647,17 +653,23 @@ livere_uid: # <your_uid>
 # Gitalk
 # For more information: https://gitalk.github.io, https://github.com/gitalk/gitalk
 gitalk:
-  enable: false
-  github_id: # GitHub repo owner
-  repo: # Repository name to store issues
-  client_id: # GitHub Application Client ID
-  client_secret: # GitHub Application Client Secret
-  admin_user: # GitHub repo owner and collaborators, only these guys can initialize gitHub issues
-  distraction_free_mode: true # Facebook-like distraction free mode
+  enable: true
+  # GitHub repo owner
+  github_id: wanghao1491@163.com
+  # Repository name to store issues
+  repo: flowerunbeaten.github.io
+  # GitHub Application Client ID
+  client_id: cfc39a997489bf131f7a
+  # GitHub Application Client Secret
+  client_secret: 5930be722b296d46507080fe8caff8d8676349ba
+  # GitHub repo owner and collaborators, only these guys can initialize gitHub issues
+  admin_user: wanghao1491@163.com
+  # Facebook-like distraction free mode
+  distraction_free_mode: true
   # Gitalk's display language depends on user's browser or system environment
   # If you want everyone visiting your site to see a uniform language, you can set a force language value
   # Available values: en | es-ES | fr | ru | zh-CN | zh-TW
-  language:
+  language: zh-CN
 
 
 # ---------------------------------------------------------------
@@ -919,7 +931,7 @@ vendors:
 
   # Internal version: 0.2.8
   # pjax: //cdn.jsdelivr.net/gh/theme-next/theme-next-pjax@0/pjax.min.js
-  pjax:
+  pjax: //cdn.jsdelivr.net/gh/theme-next/theme-next-pjax@0/pjax.min.js
 
   # FancyBox
   # jquery: //cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js
