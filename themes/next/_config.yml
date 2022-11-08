@@ -68,7 +68,7 @@ footer:
     color: "#ff0000"
 
   # If not defined, `author` from Hexo `_config.yml` will be used.
-  copyright: Flower Unbeaten
+  copyright:
 
   # Powered by Hexo & NexT
   powered: false
@@ -244,10 +244,13 @@ chat:
 # ---------------------------------------------------------------
 
 # Automatically excerpt description in homepage as preamble text.
+# 自动撷取首页中的描述作为序言文本。
 excerpt_description: true
 
 # Read more button
+# 阅读更多按钮
 # If true, the read more button will be displayed in excerpt section.
+# 如果为true，则在摘录部分将显示“阅读更多”按钮。
 read_more_btn: true
 
 # Post meta display settings
@@ -264,7 +267,7 @@ post_meta:
 symbols_count_time:
   separated_meta: true
   item_text_post: true
-  item_text_total: false
+  item_text_total: true
 
 # Use icon instead of the symbol # to indicate the tag at the bottom of the post
 tag_icon: true
@@ -273,13 +276,13 @@ tag_icon: true
 # Front-matter variable (unsupport animation).
 reward_settings:
   # If true, reward will be displayed in every article by default.
-  enable: false
+  enable: true
   animation: false
-  #comment: Donate comment here.
+  comment: 请我喝杯咖啡
 
 reward:
-#wechatpay: /images/wechatpay.png
-#alipay: /images/alipay.png
+  wechatpay: /images/wechatpay.png
+  alipay: /images/alipay.png
 #paypal: /images/paypal.png
 #bitcoin: /images/bitcoin.png
 
@@ -624,7 +627,7 @@ changyan:
 # Valine
 # For more information: https://valine.js.org, https://github.com/xCss/Valine
 valine:
-  enable: false
+  enable: true
   # Your leancloud application appid
   appid: sNjXsM6NGEJigsY3v9woNssc-gzGzoHsz
   # Your leancloud application appkey
@@ -634,16 +637,23 @@ valine:
   # Verification code
   verify: false
   # Comment box placeholder
-  placeholder: Just go go
-  avatar: mm # Gravatar style
-  guest_info: nick,mail,link # Custom comment header
-  pageSize: 10 # Pagination size
+  placeholder:
+  # Gravatar style
+  avatar: mm
+  # Custom comment header
+  guest_info: nick,mail,link
+  # Pagination size
+  pageSize: 10
   # Language, available values: en, zh-cn
   language: zh-cn
-  visitor: false # Article reading statistic
-  comment_count: true # If false, comment count will only be displayed in post page, not in home page
-  recordIP: false # Whether to record the commenter IP
-  serverURLs: # When the custom domain name is enabled, fill it in here (it will be detected automatically by default, no need to fill in)
+  # Article reading statistic
+  visitor: true
+  # If false, comment count will only be displayed in post page, not in home page
+  comment_count: true
+  # Whether to record the commenter IP
+  recordIP: false
+  # When the custom domain name is enabled, fill it in here (it will be detected automatically by default, no need to fill in)
+  serverURLs:
   #post_meta_order: 0
 
 # LiveRe comments system
@@ -653,7 +663,7 @@ livere_uid: # <your_uid>
 # Gitalk
 # For more information: https://gitalk.github.io, https://github.com/gitalk/gitalk
 gitalk:
-  enable: true
+  enable: false
   # GitHub repo owner
   github_id: 'flowerunbeaten'
   # Repository name to store issues

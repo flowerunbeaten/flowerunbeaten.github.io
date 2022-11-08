@@ -1,22 +1,3 @@
-<span id="timeDate">载入天数...</span><span id="times">载入时分秒...</span>
-<script>
-    var now = new Date();
-    function createtime() {
-        //在此处修改你的建站时间，格式：月/日/年 时:分:秒
-        var grt= new Date("11/01/2022 00:00:00");
-        now.setTime(now.getTime()+250);
-        days = (now - grt ) / 1000 / 60 / 60 / 24; dnum = Math.floor(days);
-        hours = (now - grt ) / 1000 / 60 / 60 - (24 * dnum); hnum = Math.floor(hours);
-        if(String(hnum).length ==1 ){hnum = "0" + hnum;} minutes = (now - grt ) / 1000 /60 - (24 * 60 * dnum) - (60 * hnum);
-        mnum = Math.floor(minutes); if(String(mnum).length ==1 ){mnum = "0" + mnum;}
-        seconds = (now - grt ) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum);
-        snum = Math.round(seconds); if(String(snum).length ==1 ){snum = "0" + snum;}
-        document.getElementById("timeDate").innerHTML = "本站已运行 "+dnum+" 天 ";
-        document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒";
-    }
-setInterval("createtime()",250);
-</script>
-
 {%- if theme.footer.beian.enable %}
   <div class="beian">
     {{- next_url('https://beian.miit.gov.cn', theme.footer.beian.icp + ' ') }}
@@ -37,37 +18,37 @@ setInterval("createtime()",250);
     <i class="{{ theme.footer.icon.name }}"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">{{ theme.footer.copyright or author }}</span>
+</div>
 
-  {%- if config.symbols_count_time.total_symbols %}
-    <span class="post-meta-divider">|</span>
-    <span class="post-meta-item-icon">
-      <i class="fa fa-chart-area"></i>
-    </span>
-    {%- if theme.symbols_count_time.item_text_total %}
-      <span class="post-meta-item-text">{{ __('symbols_count_time.count_total') + __('symbol.colon') }}</span>
+<div class="wordcount">
+    {%- if config.symbols_count_time.total_symbols %}
+      <span class="post-meta-item-icon">
+        <i class="fa fa-chart-area"></i>
+      </span>
+      {%- if theme.symbols_count_time.item_text_total %}
+        <span class="post-meta-item-text">{{ __('symbols_count_time.count_total') + __('symbol.colon') }}</span>
+      {%- endif %}
+      <span title="{{ __('symbols_count_time.count_total') }}">{{ symbolsCountTotal(site) }}</span>
     {%- endif %}
-    <span title="{{ __('symbols_count_time.count_total') }}">{{ symbolsCountTotal(site) }}</span>
-  {%- endif %}
-
-  {%- if config.symbols_count_time.total_time %}
-    <span class="post-meta-divider">|</span>
-    <span class="post-meta-item-icon">
-      <i class="fa fa-coffee"></i>
-    </span>
-    {%- if theme.symbols_count_time.item_text_total %}
-      <span class="post-meta-item-text">{{ __('symbols_count_time.time_total') }} &asymp;</span>
+    {%- if config.symbols_count_time.total_time %}
+      <span class="post-meta-divider">|</span>
+      <span class="post-meta-item-icon">
+        <i class="fa fa-coffee"></i>
+      </span>
+      {%- if theme.symbols_count_time.item_text_total %}
+        <span class="post-meta-item-text">{{ __('symbols_count_time.time_total') }} &asymp;</span>
+      {%- endif %}
+      <span title="{{ __('symbols_count_time.time_total') }}">{{ symbolsTimeTotal(site, config.symbols_count_time.awl, config.symbols_count_time.wpm, __('symbols_count_time.time_minutes')) }}</span>
     {%- endif %}
-    <span title="{{ __('symbols_count_time.time_total') }}">{{ symbolsTimeTotal(site, config.symbols_count_time.awl, config.symbols_count_time.wpm, __('symbols_count_time.time_minutes')) }}</span>
-  {%- endif %}
 </div>
 
 <div class="busuanzi-count">
     <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-    <span class="post-meta-item-icon"> <i class="fa fa-user"></i> Visitors</span>
-    <span class="site-uv" title="总访客量"><span id="busuanzi_value_site_uv"></span></span>
+    <span class="post-meta-item-icon"> <i class="fa fa-user"></i> 站点总访客量</span>
+    <span class="site-uv" title="站点总访客量"><span id="busuanzi_value_site_uv"></span></span>
     <span class="post-meta-divider"> | </span>
-    <span class="post-meta-item-icon"> <i class="fa fa-eye"></i> Views</span>
-    <span class="site-pv" title="总访问量"><span id="busuanzi_value_site_pv"></span></span>
+    <span class="post-meta-item-icon"> <i class="fa fa-eye"></i> 站点总访问量</span>
+    <span class="site-pv" title="站点总访问量"><span id="busuanzi_value_site_pv"></span></span>
 </div>
 
 {%- if theme.footer.powered %}
@@ -85,6 +66,27 @@ setInterval("createtime()",250);
     <script src="//s7.addthis.com/js/300/addthis_widget.js#pubid={{ theme.add_this_id }}" async="async"></script>
   </div>
 {%- endif %}
+
+<div class="website-run-date">
+  <span id="timeDate">载入天数...</span><span id="times">载入时分秒...</span>
+  <script>
+      var now = new Date();
+      function createtime() {
+          //在此处修改你的建站时间，格式：月/日/年 时:分:秒
+          var grt= new Date("11/01/2022 00:00:00");
+          now.setTime(now.getTime()+250);
+          days = (now - grt ) / 1000 / 60 / 60 / 24; dnum = Math.floor(days);
+          hours = (now - grt ) / 1000 / 60 / 60 - (24 * dnum); hnum = Math.floor(hours);
+          if(String(hnum).length ==1 ){hnum = "0" + hnum;} minutes = (now - grt ) / 1000 /60 - (24 * 60 * dnum) - (60 * hnum);
+          mnum = Math.floor(minutes); if(String(mnum).length ==1 ){mnum = "0" + mnum;}
+          seconds = (now - grt ) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum);
+          snum = Math.round(seconds); if(String(snum).length ==1 ){snum = "0" + snum;}
+          document.getElementById("timeDate").innerHTML = "本站已运行 "+dnum+" 天 ";
+          document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒";
+      }
+  setInterval("createtime()",250);
+  </script>
+</div>
 
 {{- next_inject('footer') }}
 
