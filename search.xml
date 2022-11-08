@@ -1,6 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Linux环境搭建一：Git安装教程</title>
+    <url>/post/2372.html</url>
+    <content><![CDATA[<p>检查Git版本号<br>git –version</p>
+]]></content>
+      <categories>
+        <category>Linux</category>
+      </categories>
+      <tags>
+        <tag>Linux</tag>
+        <tag>安装教程</tag>
+        <tag>服务器</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Linux常用命令</title>
     <url>/post/bc66.html</url>
     <content><![CDATA[<h2 id="关机-x2F-重启-x2F-注销"><a href="#关机-x2F-重启-x2F-注销" class="headerlink" title="关机&#x2F;重启&#x2F;注销"></a><strong>关机&#x2F;重启&#x2F;注销</strong></h2><table>
@@ -1102,5 +1116,13 @@
 </tr>
 </tbody></table>
 ]]></content>
+      <categories>
+        <category>Linux</category>
+      </categories>
+      <tags>
+        <tag>Linux</tag>
+        <tag>服务器</tag>
+        <tag>常用命令</tag>
+      </tags>
   </entry>
 </search>
