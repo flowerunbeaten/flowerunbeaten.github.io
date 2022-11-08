@@ -2,7 +2,12 @@
 title: Linux常用命令
 abbrlink: bc66
 date: 2022-11-02 10:16:44
+categories:
+- Linux
 tags:
+- Linux
+- 常用命令
+- 服务器
 ---
 
 ## **关机/重启/注销**
