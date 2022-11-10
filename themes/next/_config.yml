@@ -1038,6 +1038,3 @@ images: images
 # 网站运行时间
 website_run_date: true
 
-# 心知天气:https://www.seniverse.com
-xin_zhi_weather: true
-
