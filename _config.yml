@@ -145,6 +145,7 @@ deploy:
   - type: git
     repo:
       github: https://github.com/flowerunbeaten/flowerunbeaten.github.io.git,master
+      gitee: https://gitee.com/flowerunbeaten/flowerunbeaten.gitee.io.git,master
   - type: baidu_url_submitter
 
 # 搜索
@@ -160,8 +161,13 @@ sitemap:
 baidusitemap:
   path: baidusitemap.xml
 
+# 配置百度链接主动推送
 baidu_url_submit:
+  # 表示提交最新的10个链接
   count: 10
+  # 在百度站长平台中注册的域名
   host: https://blog.flowerunbeaten.top
+  # 网站秘钥
   token: jPB1Bw6I65LeOwfr
+  # 在本地存储新url的文件名
   path: baidu_urls.txt
