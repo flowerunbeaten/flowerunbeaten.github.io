@@ -142,9 +142,10 @@ theme: next
 ## Docs: https://hexo.io/docs/one-command-deployment
 # 博客部署
 deploy:
-  type: git
-  repo: https://github.com/flowerunbeaten/flowerunbeaten.github.io.git
-  branch: master
+  - type: git
+    repo:
+      github: https://github.com/flowerunbeaten/flowerunbeaten.github.io.git,master
+  - type: baidu_url_submitter
 
 # 搜索
 search:
@@ -158,3 +159,9 @@ sitemap:
   path: sitemap.xml
 baidusitemap:
   path: baidusitemap.xml
+
+baidu_url_submit:
+  count: 10
+  host: https://blog.flowerunbeaten.top
+  token: jPB1Bw6I65LeOwfr
+  path: baidu_urls.txt
