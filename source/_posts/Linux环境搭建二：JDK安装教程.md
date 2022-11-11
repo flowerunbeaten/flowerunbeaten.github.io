@@ -48,7 +48,7 @@ cd java
 2、将上面准备好的JDK安装包解压到/usr/lcoal/java 文件夹下。
 
 ```
-tar -zxvf /home/software/jdk-8u341-linux-x64.tar.gz
+tar -zxvf /home/software/jdk-8u341-linux-x64.tar.gz -C ./
 ```
 
 解压完成后，/usr/local/java的文件夹下会出现一个jdk1.8.0_341的目录。
