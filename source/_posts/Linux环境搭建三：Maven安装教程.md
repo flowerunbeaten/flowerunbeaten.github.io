@@ -21,6 +21,8 @@ photos:
 
 将下载好的压缩文件上传至服务器指定目录下，我这里是上传到/home/software目录下。
 
+<!-- more-->
+
 ### 安装Maven
 
 安装Maven需要依赖Java环境，如果没有安装Java环境会导致安装不成功。如果没有安装Java环境请参考 [Linux JDK安装教程](https://blog.flowerunbeaten.top/post/47ad.html)。
