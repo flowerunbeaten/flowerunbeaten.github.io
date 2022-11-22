@@ -5,6 +5,8 @@
     <url>/post/89c2.html</url>
     <content><![CDATA[<h3 id="准备Maven安装资源"><a href="#准备Maven安装资源" class="headerlink" title="准备Maven安装资源"></a>准备Maven安装资源</h3><p><a href="https://archive.apache.org/dist/maven/maven-3/">Maven3下载地址</a>，我这里选择的版本是 apache-maven-3.6.3-bin.tar.gz。</p>
 <p>将下载好的压缩文件上传至服务器指定目录下，我这里是上传到&#x2F;home&#x2F;software目录下。</p>
+<span id="more"></span>
+
 <h3 id="安装Maven"><a href="#安装Maven" class="headerlink" title="安装Maven"></a>安装Maven</h3><p>安装Maven需要依赖Java环境，如果没有安装Java环境会导致安装不成功。如果没有安装Java环境请参考 <a href="https://blog.flowerunbeaten.top/post/47ad.html">Linux JDK安装教程</a>。</p>
 <p>在&#x2F;usr&#x2F;local&#x2F;目录下新建一个maven文件夹并进入该文件目录下，将我们刚刚准备好的压缩文件解压到该目录下。</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">cd</span> /usr/local/</span><br><span class="line"><span class="built_in">mkdir</span> maven</span><br><span class="line"><span class="built_in">cd</span> maven</span><br><span class="line">tar -zxvf apache-maven-3.6.3-bin.tar.gz -C ./</span><br></pre></td></tr></table></figure>
