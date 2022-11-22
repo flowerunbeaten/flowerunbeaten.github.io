@@ -145,6 +145,7 @@ deploy:
   - type: git
     repo:
       github: https://github.com/flowerunbeaten/flowerunbeaten.github.io.git,master
+      gitee: https://gitee.com/flowerunbeaten/flowerunbeaten.git,master
   - type: baidu_url_submitter
 
 # 搜索
