@@ -1,14 +1,15 @@
 ---
 title: Linux环境搭建三：Maven安装教程
 comments: true
-date: 2022-11-22 10:19:18
 categories:
-- Linux
+  - Linux
 tags:
-- Linux
-- 安装教程
-- 服务器
-- 运维
+  - Linux
+  - 安装教程
+  - 服务器
+  - 运维
+abbrlink: 89c2
+date: 2022-11-22 10:19:18
 top:
 password:
 photos:
