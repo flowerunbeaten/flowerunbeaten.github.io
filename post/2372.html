@@ -5,10 +5,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="#222">
 <meta name="generator" content="Hexo 6.3.0">
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/F_128.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/F_32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/F_16.png">
-  <link rel="mask-icon" href="/images/F.svg" color="#222">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/icon/clover-128.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/icon/clover-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/icon/clover-16.png">
+  <link rel="mask-icon" href="/images/icon/clover-128.png" color="#222">
 
 <link rel="stylesheet" href="/css/main.css">
 
@@ -20,19 +20,19 @@
     var CONFIG = {"hostname":"flowerunbeaten.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="检查Git版本号git –version">
+  <meta name="description" content="前置条件12服务器：阿里云服务器CentOS版本：CentOS 7.6  在线安装1234# 安装gityum install git# 查看版本号git --version  使用yum方法安装方式一般版本比较老">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Linux环境搭建一：Git安装教程">
 <meta property="og:url" content="https://flowerunbeaten.github.io/post/2372.html">
 <meta property="og:site_name" content="Flower Unbeaten&#39;s Blog">
-<meta property="og:description" content="检查Git版本号git –version">
+<meta property="og:description" content="前置条件12服务器：阿里云服务器CentOS版本：CentOS 7.6  在线安装1234# 安装gityum install git# 查看版本号git --version  使用yum方法安装方式一般版本比较老">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2022-11-07T10:09:41.000Z">
-<meta property="article:modified_time" content="2022-11-07T10:19:48.859Z">
+<meta property="article:modified_time" content="2022-11-14T01:38:52.731Z">
 <meta property="article:author" content="Ryan Wang">
 <meta property="article:tag" content="Linux">
-<meta property="article:tag" content="安装教程">
 <meta property="article:tag" content="服务器">
+<meta property="article:tag" content="安装教程">
 <meta name="twitter:card" content="summary">
 
 <link rel="canonical" href="https://flowerunbeaten.github.io/post/2372.html">
@@ -130,7 +130,7 @@
   </li>
         <li class="menu-item menu-item-tags">
 
-    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">4</span></a>
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">5</span></a>
 
   </li>
         <li class="menu-item menu-item-categories">
@@ -140,7 +140,12 @@
   </li>
         <li class="menu-item menu-item-archives">
 
-    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">2</span></a>
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">4</span></a>
+
+  </li>
+        <li class="menu-item menu-item-sitemap">
+
+    <a href="/sitemap.xml" rel="section"><i class="fa fa-sitemap fa-fw"></i>站点地图</a>
 
   </li>
       <li class="menu-item menu-item-search">
@@ -201,7 +206,7 @@
     <link itemprop="mainEntityOfPage" href="https://flowerunbeaten.github.io/post/2372.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.png">
+      <meta itemprop="image" content="/images/avatar/avatar.png">
       <meta itemprop="name" content="Ryan Wang">
       <meta itemprop="description" content="请享受无法回避的痛苦">
     </span>
@@ -215,15 +220,24 @@
         </h1>
 
         <div class="post-meta">
+
+          <!-- 文章置顶 -->
+          
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2022-11-07 18:09:41 / 修改时间：18:19:48" itemprop="dateCreated datePublished" datetime="2022-11-07T18:09:41+08:00">2022-11-07</time>
+              <time title="创建时间：2022-11-07 18:09:41" itemprop="dateCreated datePublished" datetime="2022-11-07T18:09:41+08:00">2022-11-07</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2022-11-14 09:38:52" itemprop="dateModified" datetime="2022-11-14T09:38:52+08:00">2022-11-14</time>
+              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
@@ -234,13 +248,34 @@
                 </span>
             </span>
 
-          <br>
+          
+            <span id="/post/2372.html" class="post-meta-item leancloud_visitors" data-flag-title="Linux环境搭建一：Git安装教程" title="阅读次数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span class="leancloud-visitors-count"></span>
+            </span>
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/post/2372.html#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/post/2372.html" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  <br>
             <span class="post-meta-item" title="本文字数">
               <span class="post-meta-item-icon">
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>19</span>
+              <span>743</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
@@ -259,7 +294,24 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p>检查Git版本号<br>git –version</p>
+        <h3 id="前置条件"><a href="#前置条件" class="headerlink" title="前置条件"></a>前置条件</h3><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">服务器：阿里云服务器</span><br><span class="line">CentOS版本：CentOS 7.6</span><br></pre></td></tr></table></figure>
+
+<h3 id="在线安装"><a href="#在线安装" class="headerlink" title="在线安装"></a>在线安装</h3><figure class="highlight applescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 安装git</span></span><br><span class="line">yum install git</span><br><span class="line"><span class="comment"># 查看版本号</span></span><br><span class="line">git <span class="comment">--version</span></span><br></pre></td></tr></table></figure>
+
+<p>使用yum方法安装方式一般版本比较老</p>
+<span id="more"></span>
+
+<h3 id="安装指定版本git"><a href="#安装指定版本git" class="headerlink" title="安装指定版本git"></a>安装指定版本git</h3><p><a target="_blank" rel="noopener" href="https://git-scm.com/download/linux">git下载</a></p>
+<p>选择自己需要的版本进行下载，下载完成后上传至服务器指定文件下，我这里上传到&#x2F;home&#x2F;software目录下。</p>
+<figure class="highlight apache"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 解压安装包</span></span><br><span class="line"><span class="attribute">tar</span> -zxvf git-<span class="number">2</span>.<span class="number">38</span>.<span class="number">0</span>.tar.gz </span><br><span class="line"><span class="comment"># 安装依赖</span></span><br><span class="line"><span class="attribute">yum</span> install curl-devel expat-devel gettext-devel openssl-devel zlib-devel gcc perl-ExtUtils-MakeMaker</span><br><span class="line"><span class="comment"># 查看git版本号</span></span><br><span class="line"><span class="attribute">git</span> --version</span><br><span class="line"><span class="comment"># 安装依赖时，自动安装了老的git版本，进行卸载。</span></span><br><span class="line"><span class="attribute">yum</span> remove git</span><br><span class="line"><span class="comment"># 进入解压后的git文件夹</span></span><br><span class="line"><span class="attribute">cd</span> git-<span class="number">2</span>.<span class="number">38</span>.<span class="number">0</span></span><br><span class="line"><span class="comment"># 执行编译</span></span><br><span class="line"><span class="attribute">make</span> prefix=/usr/local/git <span class="literal">all</span></span><br><span class="line"><span class="comment"># 安装git至/usr/local/git目录</span></span><br><span class="line"><span class="attribute">make</span> prefix=/usr/local/git install</span><br></pre></td></tr></table></figure>
+
+<h3 id="配置环境变量"><a href="#配置环境变量" class="headerlink" title="配置环境变量"></a>配置环境变量</h3><p>编辑profile文件</p>
+<figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 编辑环境变量配置</span></span><br><span class="line">vim /etc<span class="built_in">/profile</span></span><br><span class="line"><span class="built_in"></span><span class="comment"># 输入i，在适当位置加入</span></span><br><span class="line"><span class="comment"># Git环境变量配置</span></span><br><span class="line"><span class="built_in">export</span> <span class="attribute">GIT_HOME</span>=/usr/local/git</span><br><span class="line"><span class="built_in">export</span> <span class="attribute">PATH</span>=<span class="variable">$PATH</span>:$GIT_HOME/bin</span><br><span class="line"><span class="comment"># 保存，退出。按键盘ESC键并在命令框内输入:wq回车</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="刷新配置文件"><a href="#刷新配置文件" class="headerlink" title="刷新配置文件"></a>刷新配置文件</h3><p>刷新配置文件，使配置立即生效</p>
+<figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 刷新配置文件，使配置立即生效</span></span><br><span class="line">source <span class="regexp">/etc/</span>profire</span><br><span class="line"><span class="comment"># 查看git版本号</span></span><br><span class="line">git --version</span><br></pre></td></tr></table></figure>
+
+<p>至此我们的git就安装好了。</p>
 
     </div>
 
@@ -270,9 +322,35 @@
   <div class="popular-posts-header">相关文章推荐</div>
   <ul class="popular-posts">
     <li class="popular-posts-item">
+      <div class="popular-posts-title"><a href="\post\89c2.html" rel="bookmark">Linux环境搭建三：Maven安装教程</a></div>
+    </li>
+    <li class="popular-posts-item">
+      <div class="popular-posts-title"><a href="\post\47ad.html" rel="bookmark">Linux环境搭建二：JDK安装教程</a></div>
+    </li>
+    <li class="popular-posts-item">
       <div class="popular-posts-title"><a href="\post\bc66.html" rel="bookmark">Linux常用命令</a></div>
     </li>
   </ul>
+
+        <div class="reward-container">
+  <div>请我喝杯咖啡</div>
+  <button onclick="var qr = document.getElementById('qr'); qr.style.display = (qr.style.display === 'none') ? 'block' : 'none';">
+    打赏
+  </button>
+  <div id="qr" style="display: none;">
+      
+      <div style="display: inline-block;">
+        <img src="/images/reward/wechatpay.png" alt="Ryan Wang 微信支付">
+        <p>微信支付</p>
+      </div>
+      
+      <div style="display: inline-block;">
+        <img src="/images/reward/alipay.png" alt="Ryan Wang 支付宝">
+        <p>支付宝</p>
+      </div>
+
+  </div>
+</div>
 
         
 
@@ -296,8 +374,8 @@
           
           <div class="post-tags">
               <a href="/tags/Linux/" rel="tag"><i class="fa fa-tag"></i> Linux</a>
-              <a href="/tags/%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/" rel="tag"><i class="fa fa-tag"></i> 安装教程</a>
               <a href="/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/" rel="tag"><i class="fa fa-tag"></i> 服务器</a>
+              <a href="/tags/%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/" rel="tag"><i class="fa fa-tag"></i> 安装教程</a>
           </div>
 
         
@@ -309,7 +387,10 @@
     <a href="/post/bc66.html" rel="prev" title="Linux常用命令">
       <i class="fa fa-chevron-left"></i> Linux常用命令
     </a></div>
-      <div class="post-nav-item"></div>
+      <div class="post-nav-item">
+    <a href="/post/47ad.html" rel="next" title="Linux环境搭建二：JDK安装教程">
+      Linux环境搭建二：JDK安装教程 <i class="fa fa-chevron-right"></i>
+    </a></div>
     </div>
       </footer>
     
@@ -322,7 +403,7 @@
 
           </div>
           
-    <div class="comments" id="gitalk-container"></div>
+    <div class="comments" id="valine-comments"></div>
 
 <script>
   window.addEventListener('tabs:register', () => {
@@ -369,13 +450,14 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%89%8D%E7%BD%AE%E6%9D%A1%E4%BB%B6"><span class="nav-number">1.</span> <span class="nav-text">前置条件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%9C%A8%E7%BA%BF%E5%AE%89%E8%A3%85"><span class="nav-number">2.</span> <span class="nav-text">在线安装</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AE%89%E8%A3%85%E6%8C%87%E5%AE%9A%E7%89%88%E6%9C%ACgit"><span class="nav-number">3.</span> <span class="nav-text">安装指定版本git</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%85%8D%E7%BD%AE%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F"><span class="nav-number">4.</span> <span class="nav-text">配置环境变量</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%88%B7%E6%96%B0%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6"><span class="nav-number">5.</span> <span class="nav-text">刷新配置文件</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
       <div class="site-overview-wrap sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
     <img class="site-author-image" itemprop="image" alt="Ryan Wang"
-      src="/images/avatar.png">
+      src="/images/avatar/avatar.png">
   <p class="site-author-name" itemprop="name">Ryan Wang</p>
   <div class="site-description" itemprop="description">请享受无法回避的痛苦</div>
 </div>
@@ -384,7 +466,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">2</span>
+          <span class="site-state-item-count">4</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -397,7 +479,7 @@
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">4</span>
+        <span class="site-state-item-count">5</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -433,24 +515,7 @@
       <div class="footer-inner">
         
 
-        <span id="timeDate">载入天数...</span><span id="times">载入时分秒...</span>
-<script>
-    var now = new Date();
-    function createtime() {
-        //在此处修改你的建站时间，格式：月/日/年 时:分:秒
-        var grt= new Date("11/01/2022 00:00:00");
-        now.setTime(now.getTime()+250);
-        days = (now - grt ) / 1000 / 60 / 60 / 24; dnum = Math.floor(days);
-        hours = (now - grt ) / 1000 / 60 / 60 - (24 * dnum); hnum = Math.floor(hours);
-        if(String(hnum).length ==1 ){hnum = "0" + hnum;} minutes = (now - grt ) / 1000 /60 - (24 * 60 * dnum) - (60 * hnum);
-        mnum = Math.floor(minutes); if(String(mnum).length ==1 ){mnum = "0" + mnum;}
-        seconds = (now - grt ) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum);
-        snum = Math.round(seconds); if(String(snum).length ==1 ){snum = "0" + snum;}
-        document.getElementById("timeDate").innerHTML = "本站已运行 "+dnum+" 天 ";
-        document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒";
-    }
-setInterval("createtime()",250);
-</script>
+        
 
 <div class="copyright">
   
@@ -459,27 +524,55 @@ setInterval("createtime()",250);
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>
-  <span class="author" itemprop="copyrightHolder">Flower Unbeaten</span>
-    <span class="post-meta-divider">|</span>
-    <span class="post-meta-item-icon">
-      <i class="fa fa-chart-area"></i>
-    </span>
-    <span title="站点总字数">7k</span>
-    <span class="post-meta-divider">|</span>
-    <span class="post-meta-item-icon">
-      <i class="fa fa-coffee"></i>
-    </span>
-    <span title="站点阅读时长">6 分钟</span>
+  <span class="author" itemprop="copyrightHolder">Ryan Wang</span>
+</div>
+
+<div class="wordcount">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-chart-area"></i>
+      </span>
+        <span class="post-meta-item-text">站点总字数：</span>
+      <span title="站点总字数">9k</span>
+      <span class="post-meta-divider">|</span>
+      <span class="post-meta-item-icon">
+        <i class="fa fa-coffee"></i>
+      </span>
+        <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
+      <span title="站点阅读时长">8 分钟</span>
 </div>
 
 <div class="busuanzi-count">
     <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-    <span class="post-meta-item-icon"> <i class="fa fa-user"></i> Visitors</span>
-    <span class="site-uv" title="总访客量"><span id="busuanzi_value_site_uv"></span></span>
+    <span class="post-meta-item-icon"> <i class="fa fa-user"></i> 站点总访客量</span>
+    <span class="site-uv" title="站点总访客量"><span id="busuanzi_value_site_uv"></span></span>
     <span class="post-meta-divider"> | </span>
-    <span class="post-meta-item-icon"> <i class="fa fa-eye"></i> Views</span>
-    <span class="site-pv" title="总访问量"><span id="busuanzi_value_site_pv"></span></span>
+    <span class="post-meta-item-icon"> <i class="fa fa-eye"></i> 站点总访问量</span>
+    <span class="site-pv" title="站点总访问量"><span id="busuanzi_value_site_pv"></span></span>
 </div>
+
+
+  <!-- 网站运行时间 -->
+  <div class="website-run-date">
+    <span id="timeDate">载入天数...</span><span id="times">载入时分秒...</span>
+    <script>
+        var now = new Date();
+        function createtime() {
+            //在此处修改你的建站时间，格式：月/日/年 时:分:秒
+            var grt= new Date("11/01/2022 00:00:00");
+            now.setTime(now.getTime()+250);
+            days = (now - grt ) / 1000 / 60 / 60 / 24; dnum = Math.floor(days);
+            hours = (now - grt ) / 1000 / 60 / 60 - (24 * dnum); hnum = Math.floor(hours);
+            if(String(hnum).length ==1 ){hnum = "0" + hnum;} minutes = (now - grt ) / 1000 /60 - (24 * 60 * dnum) - (60 * hnum);
+            mnum = Math.floor(minutes); if(String(mnum).length ==1 ){mnum = "0" + mnum;}
+            seconds = (now - grt ) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum);
+            snum = Math.round(seconds); if(String(snum).length ==1 ){snum = "0" + snum;}
+            document.getElementById("timeDate").innerHTML = "本站已运行 "+dnum+" 天 ";
+            document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒";
+        }
+    setInterval("createtime()",250);
+    </script>
+  </div>
+
 
 
         
@@ -537,23 +630,32 @@ setInterval("createtime()",250);
 
   
 
-<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.css">
 
 <script>
-NexT.utils.loadComments(document.querySelector('#gitalk-container'), () => {
-  NexT.utils.getScript('//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js', () => {
-    var gitalk = new Gitalk({
-      clientID    : '7933078b79f71aad846a',
-      clientSecret: 'ebcc3b695edddd4491b51bd04a5c042e6868dd9f',
-      repo        : 'blog-comments',
-      owner       : 'flowerunbeaten',
-      admin       : ['flowerunbeaten'],
-      id          : '847f5e70e1796db6997fd9e5a6183d12',
-        language: 'zh-CN',
-      distractionFreeMode: true
+NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
+  NexT.utils.getScript('//unpkg.com/valine/dist/Valine.min.js', () => {
+    var GUEST = ['nick', 'mail', 'link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item => {
+      return GUEST.includes(item);
     });
-    gitalk.render('gitalk-container');
-  }, window.Gitalk);
+    new Valine({
+      el         : '#valine-comments',
+      verify     : false,
+      notify     : false,
+      appId      : 'sNjXsM6NGEJigsY3v9woNssc-gzGzoHsz',
+      appKey     : '7XfjlqbaP7feBU2Y2QKyqJBT',
+      placeholder: "",
+      avatar     : 'mm',
+      meta       : guest,
+      pageSize   : '10' || 10,
+      visitor    : true,
+      lang       : 'zh-cn' || 'zh-cn',
+      path       : location.pathname,
+      recordIP   : false,
+      serverURLs : ''
+    });
+  }, window.Valine);
 });
 </script>
 
