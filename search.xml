@@ -1,6 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Linux环境搭建一：Git安装教程</title>
+    <url>/post/2372.html</url>
+    <content><![CDATA[<h3 id="前置条件"><a href="#前置条件" class="headerlink" title="前置条件"></a>前置条件</h3><figure class="highlight"><table><tr><td class="code"><pre><span class="line">服务器：阿里云服务器</span><br><span class="line">CentOS版本：CentOS 7.6</span><br></pre></td></tr></table></figure>
+
+<h3 id="在线安装"><a href="#在线安装" class="headerlink" title="在线安装"></a>在线安装</h3><figure class="highlight applescript"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 安装git</span></span><br><span class="line">yum install git</span><br><span class="line"><span class="comment"># 查看版本号</span></span><br><span class="line">git <span class="comment">--version</span></span><br></pre></td></tr></table></figure>
+
+<p>使用yum方法安装方式一般版本比较老</p>
+<span id="more"></span>
+
+<h3 id="安装指定版本git"><a href="#安装指定版本git" class="headerlink" title="安装指定版本git"></a>安装指定版本git</h3><p><a href="https://git-scm.com/download/linux">git下载</a></p>
+<p>选择自己需要的版本进行下载，下载完成后上传至服务器指定文件下，我这里上传到&#x2F;home&#x2F;software目录下。</p>
+<figure class="highlight apache"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 解压安装包</span></span><br><span class="line"><span class="attribute">tar</span> -zxvf git-<span class="number">2</span>.<span class="number">38</span>.<span class="number">0</span>.tar.gz </span><br><span class="line"><span class="comment"># 安装依赖</span></span><br><span class="line"><span class="attribute">yum</span> install curl-devel expat-devel gettext-devel openssl-devel zlib-devel gcc perl-ExtUtils-MakeMaker</span><br><span class="line"><span class="comment"># 查看git版本号</span></span><br><span class="line"><span class="attribute">git</span> --version</span><br><span class="line"><span class="comment"># 安装依赖时，自动安装了老的git版本，进行卸载。</span></span><br><span class="line"><span class="attribute">yum</span> remove git</span><br><span class="line"><span class="comment"># 进入解压后的git文件夹</span></span><br><span class="line"><span class="attribute">cd</span> git-<span class="number">2</span>.<span class="number">38</span>.<span class="number">0</span></span><br><span class="line"><span class="comment"># 执行编译</span></span><br><span class="line"><span class="attribute">make</span> prefix=/usr/local/git <span class="literal">all</span></span><br><span class="line"><span class="comment"># 安装git至/usr/local/git目录</span></span><br><span class="line"><span class="attribute">make</span> prefix=/usr/local/git install</span><br></pre></td></tr></table></figure>
+
+<h3 id="配置环境变量"><a href="#配置环境变量" class="headerlink" title="配置环境变量"></a>配置环境变量</h3><p>编辑profile文件</p>
+<figure class="highlight routeros"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 编辑环境变量配置</span></span><br><span class="line">vim /etc<span class="built_in">/profile</span></span><br><span class="line"><span class="built_in"></span><span class="comment"># 输入i，在适当位置加入</span></span><br><span class="line"><span class="comment"># Git环境变量配置</span></span><br><span class="line"><span class="built_in">export</span> <span class="attribute">GIT_HOME</span>=/usr/local/git</span><br><span class="line"><span class="built_in">export</span> <span class="attribute">PATH</span>=<span class="variable">$PATH</span>:$GIT_HOME/bin</span><br><span class="line"><span class="comment"># 保存，退出。按键盘ESC键并在命令框内输入:wq回车</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="刷新配置文件"><a href="#刷新配置文件" class="headerlink" title="刷新配置文件"></a>刷新配置文件</h3><p>刷新配置文件，使配置立即生效</p>
+<figure class="highlight awk"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 刷新配置文件，使配置立即生效</span></span><br><span class="line">source <span class="regexp">/etc/</span>profire</span><br><span class="line"><span class="comment"># 查看git版本号</span></span><br><span class="line">git --version</span><br></pre></td></tr></table></figure>
+
+<p>至此我们的git就安装好了。</p>
+]]></content>
+      <categories>
+        <category>Linux</category>
+      </categories>
+      <tags>
+        <tag>Linux</tag>
+        <tag>安装教程</tag>
+        <tag>服务器</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Linux常用命令</title>
     <url>/post/bc66.html</url>
     <content><![CDATA[<h2 id="关机-x2F-重启-x2F-注销"><a href="#关机-x2F-重启-x2F-注销" class="headerlink" title="关机&#x2F;重启&#x2F;注销"></a><strong>关机&#x2F;重启&#x2F;注销</strong></h2><table>
@@ -1107,39 +1138,8 @@
       </categories>
       <tags>
         <tag>Linux</tag>
+        <tag>服务器</tag>
         <tag>常用命令</tag>
-        <tag>服务器</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Linux环境搭建一：Git安装教程</title>
-    <url>/post/2372.html</url>
-    <content><![CDATA[<h3 id="前置条件"><a href="#前置条件" class="headerlink" title="前置条件"></a>前置条件</h3><figure class="highlight"><table><tr><td class="code"><pre><span class="line">服务器：阿里云服务器</span><br><span class="line">CentOS版本：CentOS 7.6</span><br></pre></td></tr></table></figure>
-
-<h3 id="在线安装"><a href="#在线安装" class="headerlink" title="在线安装"></a>在线安装</h3><figure class="highlight applescript"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 安装git</span></span><br><span class="line">yum install git</span><br><span class="line"><span class="comment"># 查看版本号</span></span><br><span class="line">git <span class="comment">--version</span></span><br></pre></td></tr></table></figure>
-
-<p>使用yum方法安装方式一般版本比较老</p>
-<span id="more"></span>
-
-<h3 id="安装指定版本git"><a href="#安装指定版本git" class="headerlink" title="安装指定版本git"></a>安装指定版本git</h3><p><a href="https://git-scm.com/download/linux">git下载</a></p>
-<p>选择自己需要的版本进行下载，下载完成后上传至服务器指定文件下，我这里上传到&#x2F;home&#x2F;software目录下。</p>
-<figure class="highlight apache"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 解压安装包</span></span><br><span class="line"><span class="attribute">tar</span> -zxvf git-<span class="number">2</span>.<span class="number">38</span>.<span class="number">0</span>.tar.gz </span><br><span class="line"><span class="comment"># 安装依赖</span></span><br><span class="line"><span class="attribute">yum</span> install curl-devel expat-devel gettext-devel openssl-devel zlib-devel gcc perl-ExtUtils-MakeMaker</span><br><span class="line"><span class="comment"># 查看git版本号</span></span><br><span class="line"><span class="attribute">git</span> --version</span><br><span class="line"><span class="comment"># 安装依赖时，自动安装了老的git版本，进行卸载。</span></span><br><span class="line"><span class="attribute">yum</span> remove git</span><br><span class="line"><span class="comment"># 进入解压后的git文件夹</span></span><br><span class="line"><span class="attribute">cd</span> git-<span class="number">2</span>.<span class="number">38</span>.<span class="number">0</span></span><br><span class="line"><span class="comment"># 执行编译</span></span><br><span class="line"><span class="attribute">make</span> prefix=/usr/local/git <span class="literal">all</span></span><br><span class="line"><span class="comment"># 安装git至/usr/local/git目录</span></span><br><span class="line"><span class="attribute">make</span> prefix=/usr/local/git install</span><br></pre></td></tr></table></figure>
-
-<h3 id="配置环境变量"><a href="#配置环境变量" class="headerlink" title="配置环境变量"></a>配置环境变量</h3><p>编辑profile文件</p>
-<figure class="highlight routeros"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 编辑环境变量配置</span></span><br><span class="line">vim /etc<span class="built_in">/profile</span></span><br><span class="line"><span class="built_in"></span><span class="comment"># 输入i，在适当位置加入</span></span><br><span class="line"><span class="comment"># Git环境变量配置</span></span><br><span class="line"><span class="built_in">export</span> <span class="attribute">GIT_HOME</span>=/usr/local/git</span><br><span class="line"><span class="built_in">export</span> <span class="attribute">PATH</span>=<span class="variable">$PATH</span>:$GIT_HOME/bin</span><br><span class="line"><span class="comment"># 保存，退出。按键盘ESC键并在命令框内输入:wq回车</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="刷新配置文件"><a href="#刷新配置文件" class="headerlink" title="刷新配置文件"></a>刷新配置文件</h3><p>刷新配置文件，使配置立即生效</p>
-<figure class="highlight awk"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 刷新配置文件，使配置立即生效</span></span><br><span class="line">source <span class="regexp">/etc/</span>profire</span><br><span class="line"><span class="comment"># 查看git版本号</span></span><br><span class="line">git --version</span><br></pre></td></tr></table></figure>
-
-<p>至此我们的git就安装好了。</p>
-]]></content>
-      <categories>
-        <category>Linux</category>
-      </categories>
-      <tags>
-        <tag>Linux</tag>
-        <tag>服务器</tag>
-        <tag>安装教程</tag>
       </tags>
   </entry>
   <entry>
@@ -1170,8 +1170,8 @@
       </categories>
       <tags>
         <tag>Linux</tag>
-        <tag>服务器</tag>
         <tag>安装教程</tag>
+        <tag>服务器</tag>
         <tag>运维</tag>
       </tags>
   </entry>
@@ -1214,8 +1214,8 @@
       </categories>
       <tags>
         <tag>Linux</tag>
-        <tag>服务器</tag>
         <tag>安装教程</tag>
+        <tag>服务器</tag>
         <tag>运维</tag>
       </tags>
   </entry>
