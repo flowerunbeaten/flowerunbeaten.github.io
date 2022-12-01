@@ -42,10 +42,10 @@ custom_file_path:
 # ---------------------------------------------------------------
 
 favicon:
-  small: /images/icon/clover-16.png
-  medium: /images/icon/clover-32.png
-  apple_touch_icon: /images/icon/clover-128.png
-  safari_pinned_tab: /images/icon/clover-128.png
+  small: /images/icon/favicon-32.ico
+  medium: /images/icon/favicon-64.ico
+  apple_touch_icon: /images/icon/favicon-128.ico
+  safari_pinned_tab: /images/icon/favicon-128.ico
   #android_manifest: /images/manifest.json
   #ms_browserconfig: /images/browserconfig.xml
 
