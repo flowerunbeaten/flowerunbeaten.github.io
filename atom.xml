@@ -6,7 +6,7 @@
   <link href="https://flowerunbeaten.github.io/atom.xml" rel="self"/>
   
   <link href="https://flowerunbeaten.github.io/"/>
-  <updated>2022-11-22T04:03:07.421Z</updated>
+  <updated>2022-12-05T02:48:43.073Z</updated>
   <id>https://flowerunbeaten.github.io/</id>
   
   <author>
@@ -17,11 +17,41 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Linux环境搭建四：Node安装教程</title>
+    <link href="https://flowerunbeaten.github.io/post/5251.html"/>
+    <id>https://flowerunbeaten.github.io/post/5251.html</id>
+    <published>2022-12-01T03:37:39.000Z</published>
+    <updated>2022-12-05T02:48:43.073Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="准备Node安装包"><a href="#准备Node安装包" class="headerlink" title="准备Node安装包"></a>准备Node安装包</h3><p><a href="https://nodejs.org/en/">Node下载地址</a></p><p><img src="https://flowerunbeaten-blog-images.oss-cn-chengdu.aliyuncs.com/images/202212011352221.png" alt="image-20221201135233056"></p><span id="more"></span><p><img src="https://flowerunbeaten-blog-images.oss-cn-chengdu.aliyuncs.com/images/202212011353704.png" alt="image-20221201135306594"></p><p>追求稳定选择左边的，想要尝试新功能的选择右边，一般推荐选择稳定版本，新版本不确定会不会有bug。选择对应的版本进行下载即可。</p><h3 id="创建目录并解压"><a href="#创建目录并解压" class="headerlink" title="创建目录并解压"></a>创建目录并解压</h3><p>下载完成后上传至服务器指定位置，我这里是放在&#x2F;home&#x2F;software&#x2F;文件夹下。</p><p>在&#x2F;usr&#x2F;local&#x2F;下创建node文件夹并进入</p><figure class="highlight crmsh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">cd /usr/local/</span><br><span class="line">mkdir <span class="keyword">node</span></span><br><span class="line"><span class="title">cd</span> <span class="keyword">node</span><span class="title"></span></span><br></pre></td></tr></table></figure><p>将node的安装包解压到&#x2F;usr&#x2F;local&#x2F;node中即可。</p><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tar -zxvf <span class="regexp">/home/</span>software<span class="regexp">/node-v16.17.1-linux-x64.tar.xz -C ./</span></span><br></pre></td></tr></table></figure><p>解压完成之后，在&#x2F;usr&#x2F;local&#x2F;node的目录中会出现一个node-v16.17.1-linux-x64的目录。</p><h3 id="配置Node系统环境变量"><a href="#配置Node系统环境变量" class="headerlink" title="配置Node系统环境变量"></a>配置Node系统环境变量</h3><p>编辑 ~&#x2F;.bash_profile ⽂件</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vim ~/.bash_profile</span><br></pre></td></tr></table></figure><p>在⽂件末尾追加如下信息:</p><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Nodejs</span></span><br><span class="line">export PATH=<span class="regexp">/usr/</span>local<span class="regexp">/node/</span>node-v16.<span class="number">17.1</span>-linux-x64/bin:<span class="variable">$PATH</span></span><br></pre></td></tr></table></figure><p>保存退出，刷新环境变量。</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">source ~/.bash_profile</span><br></pre></td></tr></table></figure><h3 id="检查安装结果"><a href="#检查安装结果" class="headerlink" title="检查安装结果"></a>检查安装结果</h3><figure class="highlight crmsh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">node</span> <span class="title">-v</span></span><br><span class="line">npm <span class="keyword">version</span></span><br><span class="line">npx -v</span><br></pre></td></tr></table></figure><p>均有版本信息输出即可</p><p><img src="https://flowerunbeaten-blog-images.oss-cn-chengdu.aliyuncs.com/images/202212051048798.png" alt="image-20221205104814718"></p>]]></content>
+    
+    
+    <summary type="html">&lt;h3 id=&quot;准备Node安装包&quot;&gt;&lt;a href=&quot;#准备Node安装包&quot; class=&quot;headerlink&quot; title=&quot;准备Node安装包&quot;&gt;&lt;/a&gt;准备Node安装包&lt;/h3&gt;&lt;p&gt;&lt;a href=&quot;https://nodejs.org/en/&quot;&gt;Node下载地址&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://flowerunbeaten-blog-images.oss-cn-chengdu.aliyuncs.com/images/202212011352221.png&quot; alt=&quot;image-20221201135233056&quot;&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Linux" scheme="https://flowerunbeaten.github.io/categories/Linux/"/>
+    
+    
+    <category term="Linux" scheme="https://flowerunbeaten.github.io/tags/Linux/"/>
+    
+    <category term="服务器" scheme="https://flowerunbeaten.github.io/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
+    
+    <category term="安装教程" scheme="https://flowerunbeaten.github.io/tags/%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/"/>
+    
+    <category term="运维" scheme="https://flowerunbeaten.github.io/tags/%E8%BF%90%E7%BB%B4/"/>
+    
+    <category term="Node" scheme="https://flowerunbeaten.github.io/tags/Node/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Linux环境搭建三：Maven安装教程</title>
     <link href="https://flowerunbeaten.github.io/post/89c2.html"/>
     <id>https://flowerunbeaten.github.io/post/89c2.html</id>
     <published>2022-11-22T02:19:18.000Z</published>
-    <updated>2022-11-22T04:03:07.421Z</updated>
+    <updated>2022-12-01T03:40:21.034Z</updated>
     
     <content type="html"><![CDATA[<h3 id="准备Maven安装资源"><a href="#准备Maven安装资源" class="headerlink" title="准备Maven安装资源"></a>准备Maven安装资源</h3><p><a href="https://archive.apache.org/dist/maven/maven-3/">Maven3下载地址</a>，我这里选择的版本是 apache-maven-3.6.3-bin.tar.gz。</p><p>将下载好的压缩文件上传至服务器指定目录下，我这里是上传到&#x2F;home&#x2F;software目录下。</p><span id="more"></span><h3 id="安装Maven"><a href="#安装Maven" class="headerlink" title="安装Maven"></a>安装Maven</h3><p>安装Maven需要依赖Java环境，如果没有安装Java环境会导致安装不成功。如果没有安装Java环境请参考 <a href="https://blog.flowerunbeaten.top/post/47ad.html">Linux JDK安装教程</a>。</p><p>在&#x2F;usr&#x2F;local&#x2F;目录下新建一个maven文件夹并进入该文件目录下，将我们刚刚准备好的压缩文件解压到该目录下。</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> /usr/local/</span><br><span class="line"><span class="built_in">mkdir</span> maven</span><br><span class="line"><span class="built_in">cd</span> maven</span><br><span class="line">tar -zxvf apache-maven-3.6.3-bin.tar.gz -C ./</span><br></pre></td></tr></table></figure><h3 id="配置阿里云镜像"><a href="#配置阿里云镜像" class="headerlink" title="配置阿里云镜像"></a>配置阿里云镜像</h3><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 进入到maven的配置文件夹下</span></span><br><span class="line">cd <span class="regexp">/usr/</span>local<span class="regexp">/maven/</span>apache-maven-<span class="number">3.6</span>.<span class="number">3</span>/conf</span><br><span class="line"><span class="comment"># 编辑配置文件</span></span><br><span class="line">vim settings.xml</span><br><span class="line"><span class="comment"># 在 &lt;mirrors&gt;&lt;/mirrors&gt; 标签对⾥添加如下内容即可：</span></span><br><span class="line">&lt;mirror&gt;</span><br><span class="line"> &lt;id&gt;alimaven&lt;/id&gt;</span><br><span class="line"> &lt;name&gt;aliyun maven&lt;/name&gt;</span><br><span class="line"> &lt;url&gt;http:<span class="regexp">//m</span>aven.aliyun.com<span class="regexp">/nexus/</span>content<span class="regexp">/groups/</span>public<span class="regexp">/&lt;/u</span>rl&gt;</span><br><span class="line"> &lt;mirrorOf&gt;central&lt;/mirrorOf&gt;</span><br><span class="line">&lt;/mirror&gt;</span><br></pre></td></tr></table></figure><p><img src="https://flowerunbeaten-blog-images.oss-cn-chengdu.aliyuncs.com/images/202211221044636.png" alt="image-20221122104447453"></p><h3 id="配置Maven环境变量"><a href="#配置Maven环境变量" class="headerlink" title="配置Maven环境变量"></a>配置Maven环境变量</h3><figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 编辑环境变量配置文件</span></span><br><span class="line">vim /etc<span class="built_in">/profile</span></span><br><span class="line"><span class="built_in"></span><span class="comment"># 在文件尾部加入如下配置，保存并退出（ESC+:wq）。</span></span><br><span class="line"><span class="comment"># Maven环境变量配置</span></span><br><span class="line"><span class="built_in">export</span> <span class="attribute">MAVEN_HOME</span>=/usr/local/maven/apache-maven-3.6.3</span><br><span class="line"><span class="built_in">export</span> <span class="attribute">PATH</span>=<span class="variable">$MAVEN_HOME</span>/bin:$PATH</span><br></pre></td></tr></table></figure><p><img src="https://flowerunbeaten-blog-images.oss-cn-chengdu.aliyuncs.com/images/202211221050947.png" alt="image-20221122105010856"></p><p>刷新配置文件，使配置文件生效。</p><figure class="highlight gradle"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">source</span> <span class="regexp">/etc/</span>profile</span><br></pre></td></tr></table></figure><h3 id="检验安装结果"><a href="#检验安装结果" class="headerlink" title="检验安装结果"></a>检验安装结果</h3><figure class="highlight armasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">mvn</span> -v</span><br></pre></td></tr></table></figure><p><img src="https://flowerunbeaten-blog-images.oss-cn-chengdu.aliyuncs.com/images/202211221052956.png" alt="image-20221122105233906"></p><p>如图所示表示安装成功。</p>]]></content>
     
@@ -36,11 +66,13 @@
     
     <category term="Linux" scheme="https://flowerunbeaten.github.io/tags/Linux/"/>
     
-    <category term="安装教程" scheme="https://flowerunbeaten.github.io/tags/%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/"/>
-    
     <category term="服务器" scheme="https://flowerunbeaten.github.io/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
     
+    <category term="安装教程" scheme="https://flowerunbeaten.github.io/tags/%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/"/>
+    
     <category term="运维" scheme="https://flowerunbeaten.github.io/tags/%E8%BF%90%E7%BB%B4/"/>
+    
+    <category term="Maven" scheme="https://flowerunbeaten.github.io/tags/Maven/"/>
     
   </entry>
   
@@ -49,7 +81,7 @@
     <link href="https://flowerunbeaten.github.io/post/47ad.html"/>
     <id>https://flowerunbeaten.github.io/post/47ad.html</id>
     <published>2022-11-10T02:45:53.000Z</published>
-    <updated>2022-11-14T01:38:52.732Z</updated>
+    <updated>2022-12-01T03:40:30.568Z</updated>
     
     <content type="html"><![CDATA[<h3 id="卸载已有的OPEN-JDK"><a href="#卸载已有的OPEN-JDK" class="headerlink" title="卸载已有的OPEN JDK"></a>卸载已有的OPEN JDK</h3><figure class="highlight vim"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"># 输入以下命令检查是否存在<span class="keyword">open</span> jdk</span><br><span class="line">rpm -<span class="keyword">qa</span> | <span class="keyword">grep</span> java</span><br><span class="line"># 如果存在，则删除</span><br><span class="line">yum -<span class="keyword">y</span> <span class="built_in">remove</span> 对应<span class="keyword">open</span> jdk的名称</span><br></pre></td></tr></table></figure><span id="more"></span><h3 id="下载JDK"><a href="#下载JDK" class="headerlink" title="下载JDK"></a>下载JDK</h3><p><a href="https://www.oracle.com/">Oracle官网地址</a></p><p>我这里选择的版本是<a href="https://www.oracle.com/java/technologies/javase/javase8u211-later-archive-downloads.html#license-lightbox">jdk-8u341-linux-x64.tar.gz</a>，如果要选择其他版本可自行选择下载。</p><p>下载完成后，使用fxtp工具将下载的压缩文件上传至你服务器指定的文件夹下，我这里是&#x2F;home&#x2F;software。</p><h3 id="安装JDK"><a href="#安装JDK" class="headerlink" title="安装JDK"></a>安装JDK</h3><p>1、在&#x2F;usr&#x2F;local&#x2F;下创建java文件夹并进入。</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> /usr/local/</span><br><span class="line"><span class="built_in">mkdir</span> java</span><br><span class="line"><span class="built_in">cd</span> java</span><br></pre></td></tr></table></figure><p>2、将上面准备好的JDK安装包解压到&#x2F;usr&#x2F;lcoal&#x2F;java 文件夹下。</p><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tar -zxvf <span class="regexp">/home/</span>software<span class="regexp">/jdk-8u341-linux-x64.tar.gz -C ./</span></span><br></pre></td></tr></table></figure><p>解压完成后，&#x2F;usr&#x2F;local&#x2F;java的文件夹下会出现一个jdk1.8.0_341的目录。</p><h3 id="配置JDK环境变量"><a href="#配置JDK环境变量" class="headerlink" title="配置JDK环境变量"></a>配置JDK环境变量</h3><p>编辑&#x2F;etc&#x2F;profile文件</p><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vim <span class="regexp">/etc/</span>profile</span><br></pre></td></tr></table></figure><p>在文件的末尾加入如下配置。</p><figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Java环境变量设置</span></span><br><span class="line"><span class="attribute">JAVA_HOME</span>=/usr/local/java/jdk1.8.0_341</span><br><span class="line"><span class="attribute">CLASSPATH</span>=<span class="variable">$JAVA_HOME</span>/lib/</span><br><span class="line"><span class="attribute">PATH</span>=<span class="variable">$PATH</span>:$JAVA_HOME/bin</span><br><span class="line"><span class="built_in">export</span> PATH JAVA_HOME CLASSPATH</span><br></pre></td></tr></table></figure><p>保存并退出（ESC+:wq）</p><p>使配置文件生效</p><figure class="highlight gradle"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">source</span> <span class="regexp">/etc/</span>profile</span><br></pre></td></tr></table></figure><h3 id="验证JDK安装结果"><a href="#验证JDK安装结果" class="headerlink" title="验证JDK安装结果"></a>验证JDK安装结果</h3><p>依次输入下面的命令。</p><figure class="highlight mipsasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">java</span></span><br><span class="line"><span class="keyword"></span><span class="keyword">javac</span></span><br><span class="line"><span class="keyword"></span><span class="keyword">java </span>-version</span><br></pre></td></tr></table></figure><p>出现下面的界面代表安装成功。</p><p><img src="https://flowerunbeaten-blog-images.oss-cn-chengdu.aliyuncs.com/images/202211102019581.png" alt="image-20221110201901523"></p><p><img src="https://flowerunbeaten-blog-images.oss-cn-chengdu.aliyuncs.com/images/202211102019656.png" alt="image-20221110201959596"></p><p><img src="https://flowerunbeaten-blog-images.oss-cn-chengdu.aliyuncs.com/images/202211102020551.png" alt="image-20221110202018519"></p>]]></content>
     
@@ -63,11 +95,13 @@
     
     <category term="Linux" scheme="https://flowerunbeaten.github.io/tags/Linux/"/>
     
-    <category term="安装教程" scheme="https://flowerunbeaten.github.io/tags/%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/"/>
-    
     <category term="服务器" scheme="https://flowerunbeaten.github.io/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
     
+    <category term="安装教程" scheme="https://flowerunbeaten.github.io/tags/%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/"/>
+    
     <category term="运维" scheme="https://flowerunbeaten.github.io/tags/%E8%BF%90%E7%BB%B4/"/>
+    
+    <category term="JDK" scheme="https://flowerunbeaten.github.io/tags/JDK/"/>
     
   </entry>
   
@@ -76,7 +110,7 @@
     <link href="https://flowerunbeaten.github.io/post/2372.html"/>
     <id>https://flowerunbeaten.github.io/post/2372.html</id>
     <published>2022-11-07T10:09:41.000Z</published>
-    <updated>2022-11-14T01:38:52.731Z</updated>
+    <updated>2022-12-05T02:50:44.247Z</updated>
     
     <content type="html"><![CDATA[<h3 id="前置条件"><a href="#前置条件" class="headerlink" title="前置条件"></a>前置条件</h3><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">服务器：阿里云服务器</span><br><span class="line">CentOS版本：CentOS 7.6</span><br></pre></td></tr></table></figure><h3 id="在线安装"><a href="#在线安装" class="headerlink" title="在线安装"></a>在线安装</h3><figure class="highlight applescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 安装git</span></span><br><span class="line">yum install git</span><br><span class="line"><span class="comment"># 查看版本号</span></span><br><span class="line">git <span class="comment">--version</span></span><br></pre></td></tr></table></figure><p>使用yum方法安装方式一般版本比较老</p><span id="more"></span><h3 id="安装指定版本git"><a href="#安装指定版本git" class="headerlink" title="安装指定版本git"></a>安装指定版本git</h3><p><a href="https://git-scm.com/download/linux">git下载</a></p><p>选择自己需要的版本进行下载，下载完成后上传至服务器指定文件下，我这里上传到&#x2F;home&#x2F;software目录下。</p><figure class="highlight apache"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 解压安装包</span></span><br><span class="line"><span class="attribute">tar</span> -zxvf git-<span class="number">2</span>.<span class="number">38</span>.<span class="number">0</span>.tar.gz </span><br><span class="line"><span class="comment"># 安装依赖</span></span><br><span class="line"><span class="attribute">yum</span> install curl-devel expat-devel gettext-devel openssl-devel zlib-devel gcc perl-ExtUtils-MakeMaker</span><br><span class="line"><span class="comment"># 查看git版本号</span></span><br><span class="line"><span class="attribute">git</span> --version</span><br><span class="line"><span class="comment"># 安装依赖时，自动安装了老的git版本，进行卸载。</span></span><br><span class="line"><span class="attribute">yum</span> remove git</span><br><span class="line"><span class="comment"># 进入解压后的git文件夹</span></span><br><span class="line"><span class="attribute">cd</span> git-<span class="number">2</span>.<span class="number">38</span>.<span class="number">0</span></span><br><span class="line"><span class="comment"># 执行编译</span></span><br><span class="line"><span class="attribute">make</span> prefix=/usr/local/git <span class="literal">all</span></span><br><span class="line"><span class="comment"># 安装git至/usr/local/git目录</span></span><br><span class="line"><span class="attribute">make</span> prefix=/usr/local/git install</span><br></pre></td></tr></table></figure><h3 id="配置环境变量"><a href="#配置环境变量" class="headerlink" title="配置环境变量"></a>配置环境变量</h3><p>编辑profile文件</p><figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 编辑环境变量配置</span></span><br><span class="line">vim /etc<span class="built_in">/profile</span></span><br><span class="line"><span class="built_in"></span><span class="comment"># 输入i，在适当位置加入</span></span><br><span class="line"><span class="comment"># Git环境变量配置</span></span><br><span class="line"><span class="built_in">export</span> <span class="attribute">GIT_HOME</span>=/usr/local/git</span><br><span class="line"><span class="built_in">export</span> <span class="attribute">PATH</span>=<span class="variable">$PATH</span>:$GIT_HOME/bin</span><br><span class="line"><span class="comment"># 保存，退出。按键盘ESC键并在命令框内输入:wq回车</span></span><br></pre></td></tr></table></figure><h3 id="刷新配置文件"><a href="#刷新配置文件" class="headerlink" title="刷新配置文件"></a>刷新配置文件</h3><p>刷新配置文件，使配置立即生效</p><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 刷新配置文件，使配置立即生效</span></span><br><span class="line">source <span class="regexp">/etc/</span>profire</span><br><span class="line"><span class="comment"># 查看git版本号</span></span><br><span class="line">git --version</span><br></pre></td></tr></table></figure><p>至此我们的git就安装好了。</p>]]></content>
     
@@ -94,9 +128,13 @@
     
     <category term="Linux" scheme="https://flowerunbeaten.github.io/tags/Linux/"/>
     
+    <category term="服务器" scheme="https://flowerunbeaten.github.io/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
+    
     <category term="安装教程" scheme="https://flowerunbeaten.github.io/tags/%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/"/>
     
-    <category term="服务器" scheme="https://flowerunbeaten.github.io/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
+    <category term="运维" scheme="https://flowerunbeaten.github.io/tags/%E8%BF%90%E7%BB%B4/"/>
+    
+    <category term="Git" scheme="https://flowerunbeaten.github.io/tags/Git/"/>
     
   </entry>
   
@@ -190,9 +228,9 @@
     
     <category term="Linux" scheme="https://flowerunbeaten.github.io/tags/Linux/"/>
     
-    <category term="服务器" scheme="https://flowerunbeaten.github.io/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
-    
     <category term="常用命令" scheme="https://flowerunbeaten.github.io/tags/%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/"/>
+    
+    <category term="服务器" scheme="https://flowerunbeaten.github.io/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
     
   </entry>
   

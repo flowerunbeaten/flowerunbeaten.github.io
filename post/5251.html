@@ -20,17 +20,28 @@
     var CONFIG = {"hostname":"flowerunbeaten.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta property="og:type" content="website">
-<meta property="og:title" content="分类">
-<meta property="og:url" content="https://flowerunbeaten.github.io/categories/index.html">
+  <meta name="description" content="准备Node安装包Node下载地址">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Linux环境搭建四：Node安装教程">
+<meta property="og:url" content="https://flowerunbeaten.github.io/post/5251.html">
 <meta property="og:site_name" content="Flake IO">
+<meta property="og:description" content="准备Node安装包Node下载地址">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2022-11-02T05:49:14.000Z">
-<meta property="article:modified_time" content="2022-11-14T01:38:52.732Z">
+<meta property="og:image" content="https://flowerunbeaten-blog-images.oss-cn-chengdu.aliyuncs.com/images/202212011352221.png">
+<meta property="og:image" content="https://flowerunbeaten-blog-images.oss-cn-chengdu.aliyuncs.com/images/202212011353704.png">
+<meta property="og:image" content="https://flowerunbeaten-blog-images.oss-cn-chengdu.aliyuncs.com/images/202212051048798.png">
+<meta property="article:published_time" content="2022-12-01T03:37:39.000Z">
+<meta property="article:modified_time" content="2022-12-05T02:48:43.073Z">
 <meta property="article:author" content="Ryan Wang">
+<meta property="article:tag" content="Linux">
+<meta property="article:tag" content="服务器">
+<meta property="article:tag" content="安装教程">
+<meta property="article:tag" content="运维">
+<meta property="article:tag" content="Node">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://flowerunbeaten-blog-images.oss-cn-chengdu.aliyuncs.com/images/202212011352221.png">
 
-<link rel="canonical" href="https://flowerunbeaten.github.io/categories/">
+<link rel="canonical" href="https://flowerunbeaten.github.io/post/5251.html">
 
 
 <script id="page-configurations">
@@ -38,13 +49,12 @@
   CONFIG.page = {
     sidebar: "",
     isHome : false,
-    isPost : false,
+    isPost : true,
     lang   : 'zh-CN'
   };
 </script>
 
-  <title>分类 | Flake IO
-</title>
+  <title>Linux环境搭建四：Node安装教程 | Flake IO</title>
   
 
 
@@ -190,55 +200,226 @@
       <div class="main-inner">
         <div class="content-wrap">
           
-  
-  
 
-          <div class="content page posts-expand">
+          <div class="content post posts-expand">
             
 
     
-    
-    
-    <div class="post-block" lang="zh-CN">
-      <header class="post-header">
-
-<h1 class="post-title" itemprop="name headline">分类
-</h1>
-
-<div class="post-meta">
   
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://flowerunbeaten.github.io/post/5251.html">
 
-</div>
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar/avatar.png">
+      <meta itemprop="name" content="Ryan Wang">
+      <meta itemprop="description" content="">
+    </span>
 
-</header>
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Flake IO">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Linux环境搭建四：Node安装教程
+        </h1>
+
+        <div class="post-meta">
+
+          <!-- 文章置顶 -->
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2022-12-01 11:37:39" itemprop="dateCreated datePublished" datetime="2022-12-01T11:37:39+08:00">2022-12-01</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2022-12-05 10:48:43" itemprop="dateModified" datetime="2022-12-05T10:48:43+08:00">2022-12-05</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Linux/" itemprop="url" rel="index"><span itemprop="name">Linux</span></a>
+                </span>
+            </span>
+
+          
+            <span id="/post/5251.html" class="post-meta-item leancloud_visitors" data-flag-title="Linux环境搭建四：Node安装教程" title="阅读次数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span class="leancloud-visitors-count"></span>
+            </span>
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/post/5251.html#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/post/5251.html" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>602</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>1 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
+        <h3 id="准备Node安装包"><a href="#准备Node安装包" class="headerlink" title="准备Node安装包"></a>准备Node安装包</h3><p><a target="_blank" rel="noopener" href="https://nodejs.org/en/">Node下载地址</a></p>
+<p><img src="https://flowerunbeaten-blog-images.oss-cn-chengdu.aliyuncs.com/images/202212011352221.png" alt="image-20221201135233056"></p>
+<span id="more"></span>
+
+<p><img src="https://flowerunbeaten-blog-images.oss-cn-chengdu.aliyuncs.com/images/202212011353704.png" alt="image-20221201135306594"></p>
+<p>追求稳定选择左边的，想要尝试新功能的选择右边，一般推荐选择稳定版本，新版本不确定会不会有bug。选择对应的版本进行下载即可。</p>
+<h3 id="创建目录并解压"><a href="#创建目录并解压" class="headerlink" title="创建目录并解压"></a>创建目录并解压</h3><p>下载完成后上传至服务器指定位置，我这里是放在&#x2F;home&#x2F;software&#x2F;文件夹下。</p>
+<p>在&#x2F;usr&#x2F;local&#x2F;下创建node文件夹并进入</p>
+<figure class="highlight crmsh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">cd /usr/local/</span><br><span class="line">mkdir <span class="keyword">node</span></span><br><span class="line"><span class="title">cd</span> <span class="keyword">node</span><span class="title"></span></span><br></pre></td></tr></table></figure>
+
+<p>将node的安装包解压到&#x2F;usr&#x2F;local&#x2F;node中即可。</p>
+<figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tar -zxvf <span class="regexp">/home/</span>software<span class="regexp">/node-v16.17.1-linux-x64.tar.xz -C ./</span></span><br></pre></td></tr></table></figure>
+
+<p>解压完成之后，在&#x2F;usr&#x2F;local&#x2F;node的目录中会出现一个node-v16.17.1-linux-x64的目录。</p>
+<h3 id="配置Node系统环境变量"><a href="#配置Node系统环境变量" class="headerlink" title="配置Node系统环境变量"></a>配置Node系统环境变量</h3><p>编辑 ~&#x2F;.bash_profile ⽂件</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vim ~/.bash_profile</span><br></pre></td></tr></table></figure>
+
+<p>在⽂件末尾追加如下信息:</p>
+<figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Nodejs</span></span><br><span class="line">export PATH=<span class="regexp">/usr/</span>local<span class="regexp">/node/</span>node-v16.<span class="number">17.1</span>-linux-x64/bin:<span class="variable">$PATH</span></span><br></pre></td></tr></table></figure>
+
+<p>保存退出，刷新环境变量。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">source ~/.bash_profile</span><br></pre></td></tr></table></figure>
+
+<h3 id="检查安装结果"><a href="#检查安装结果" class="headerlink" title="检查安装结果"></a>检查安装结果</h3><figure class="highlight crmsh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">node</span> <span class="title">-v</span></span><br><span class="line">npm <span class="keyword">version</span></span><br><span class="line">npx -v</span><br></pre></td></tr></table></figure>
+
+<p>均有版本信息输出即可</p>
+<p><img src="https://flowerunbeaten-blog-images.oss-cn-chengdu.aliyuncs.com/images/202212051048798.png" alt="image-20221205104814718"></p>
+
+    </div>
+
+    
+    
+    
       
+  <div class="popular-posts-header">相关文章推荐</div>
+  <ul class="popular-posts">
+    <li class="popular-posts-item">
+      <div class="popular-posts-title"><a href="\post\89c2.html" rel="bookmark">Linux环境搭建三：Maven安装教程</a></div>
+    </li>
+    <li class="popular-posts-item">
+      <div class="popular-posts-title"><a href="\post\47ad.html" rel="bookmark">Linux环境搭建二：JDK安装教程</a></div>
+    </li>
+    <li class="popular-posts-item">
+      <div class="popular-posts-title"><a href="\post\2372.html" rel="bookmark">Linux环境搭建一：Git安装教程</a></div>
+    </li>
+    <li class="popular-posts-item">
+      <div class="popular-posts-title"><a href="\post\bc66.html" rel="bookmark">Linux常用命令</a></div>
+    </li>
+  </ul>
+
+        <div class="reward-container">
+  <div>请我喝杯咖啡</div>
+  <button onclick="var qr = document.getElementById('qr'); qr.style.display = (qr.style.display === 'none') ? 'block' : 'none';">
+    打赏
+  </button>
+  <div id="qr" style="display: none;">
       
-      <div class="post-body">
-          <div class="category-all-page">
-            <div class="category-all-title">
-              目前共计 1 个分类
-            </div>
-            <div class="category-all">
-              <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Linux/">Linux</a><span class="category-list-count">5</span></li></ul>
-            </div>
-          </div>
-        
+      <div style="display: inline-block;">
+        <img src="/images/reward/wechatpay.png" alt="Ryan Wang 微信支付">
+        <p>微信支付</p>
       </div>
       
-      
-      
-    </div>
-    
+      <div style="display: inline-block;">
+        <img src="/images/reward/alipay.png" alt="Ryan Wang 支付宝">
+        <p>支付宝</p>
+      </div>
 
+  </div>
+</div>
+
+        
+
+<div>
+<ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者： </strong>Ryan Wang
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="https://flowerunbeaten.github.io/post/5251.html" title="Linux环境搭建四：Node安装教程">https://flowerunbeaten.github.io/post/5251.html</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+
+      <footer class="post-footer">
+          
+          <div class="post-tags">
+              <a href="/tags/Linux/" rel="tag"><i class="fa fa-tag"></i> Linux</a>
+              <a href="/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/" rel="tag"><i class="fa fa-tag"></i> 服务器</a>
+              <a href="/tags/%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/" rel="tag"><i class="fa fa-tag"></i> 安装教程</a>
+              <a href="/tags/%E8%BF%90%E7%BB%B4/" rel="tag"><i class="fa fa-tag"></i> 运维</a>
+              <a href="/tags/Node/" rel="tag"><i class="fa fa-tag"></i> Node</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/post/89c2.html" rel="prev" title="Linux环境搭建三：Maven安装教程">
+      <i class="fa fa-chevron-left"></i> Linux环境搭建三：Maven安装教程
+    </a></div>
+      <div class="post-nav-item"></div>
+    </div>
+      </footer>
     
-    
-    
+  </article>
+  
+  
+  
+
 
 
           </div>
           
+    <div class="comments" id="valine-comments"></div>
 
 <script>
   window.addEventListener('tabs:register', () => {
@@ -285,6 +466,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%87%86%E5%A4%87Node%E5%AE%89%E8%A3%85%E5%8C%85"><span class="nav-number">1.</span> <span class="nav-text">准备Node安装包</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%88%9B%E5%BB%BA%E7%9B%AE%E5%BD%95%E5%B9%B6%E8%A7%A3%E5%8E%8B"><span class="nav-number">2.</span> <span class="nav-text">创建目录并解压</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%85%8D%E7%BD%AENode%E7%B3%BB%E7%BB%9F%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F"><span class="nav-number">3.</span> <span class="nav-text">配置Node系统环境变量</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%A3%80%E6%9F%A5%E5%AE%89%E8%A3%85%E7%BB%93%E6%9E%9C"><span class="nav-number">4.</span> <span class="nav-text">检查安装结果</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
