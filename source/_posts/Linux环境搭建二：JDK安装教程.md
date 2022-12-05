@@ -8,6 +8,7 @@ tags:
   - 安装教程
   - 服务器
   - 运维
+  - JDK
 abbrlink: 47ad
 date: 2022-11-10 10:45:53
 top:

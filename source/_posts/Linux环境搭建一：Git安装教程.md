@@ -3,11 +3,13 @@ title: Linux环境搭建一：Git安装教程
 abbrlink: '2372'
 date: 2022-11-07 18:09:41
 categories:
-- Linux
+  - Linux
 tags: 
-- Linux
-- 安装教程
-- 服务器
+  - Linux
+  - 安装教程
+  - 服务器
+  - 运维
+  - Git
 ---
 
 ### 前置条件
