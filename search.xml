@@ -9,6 +9,8 @@
 <p>crontab相关命令</p>
 <figure class="highlight awk"><table><tr><td class="code"><pre><span class="line"><span class="regexp">//</span>启动服务</span><br><span class="line">service crond start   </span><br><span class="line"><span class="regexp">//</span>关闭服务</span><br><span class="line">service crond stop  </span><br><span class="line"><span class="regexp">//</span>重启服务</span><br><span class="line">service crond restart</span><br><span class="line"><span class="regexp">//</span>重新载入配置   </span><br><span class="line">service crond reload</span><br><span class="line"><span class="regexp">//</span>查看crontab服务状态  </span><br><span class="line">service crond status</span><br></pre></td></tr></table></figure>
 
+<span id="more"></span>
+
 <p>设置开机自启动</p>
 <figure class="highlight apache"><table><tr><td class="code"><pre><span class="line"><span class="attribute">chkconfig</span> --level <span class="number">345</span> crond <span class="literal">on</span></span><br></pre></td></tr></table></figure>
 
